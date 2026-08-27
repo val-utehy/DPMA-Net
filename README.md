@@ -140,7 +140,7 @@ from ultralytics import YOLO
 
 
 weights_path = "best.pt"
-data_path = "data_haze.yaml"
+data_path = "data.yaml"
 
 device = 0 if torch.cuda.is_available() else "cpu"
 
@@ -176,7 +176,7 @@ The `modules` package must be imported before loading the checkpoint so that the
 
 ---
 
-## Option 2: Validation with `eval.py`
+## Option 2: Validation with `eval.py` (the eval.py will be updated later)
 
 Run evaluation with the default settings:
 
