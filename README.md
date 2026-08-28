@@ -209,7 +209,7 @@ python eval.py --imgsz 640 --no-tta
 | Argument | Default | Description |
 |---|---:|---|
 | `--weights` | `best.pt` | Path to the model checkpoint |
-| `--data` | `data_23_04_26.yaml` | Path to the dataset YAML file |
+| `--data` | `data.yaml` | Path to the dataset YAML file |
 | `--split` | `test` | Dataset split: `train`, `val`, or `test` |
 | `--imgsz` | `640 800` | One or more evaluation image sizes |
 | `--conf` | `0.001` | Confidence threshold |
