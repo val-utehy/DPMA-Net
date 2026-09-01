@@ -1,12 +1,12 @@
 <div align="center">
 
-# SPDE-YOLO
+# DPMA Net
 
-### SPDE-YOLO: 
+### DPMA Net: 
 
 <p align="center">
   <img src="fig/YOLOv26-Ours.drawio.png" width="85%"><br> 
-  <sub><b>Figure 1.</b> Overall architecture of the proposed SPDE-YOLO model</sub>
+  <sub><b>Figure 1.</b> Overall architecture of the proposed DPMA Net model</sub>
 </p>
 
 <br>
@@ -31,7 +31,7 @@
 > [!IMPORTANT]
 > Python **3.11** is recommended for running this project.
 >
-> Using Python **3.11.x** helps ensure compatibility among PyTorch, Ultralytics, CUDA, and the custom SPDE-YOLO modules.
+> Using Python **3.11.x** helps ensure compatibility among PyTorch, Ultralytics, CUDA, and the custom DPMA Net modules.
 
 ---
 
@@ -40,15 +40,15 @@
 ### Step 1: Create a Conda environment
 
 ```bash
-conda create -n SPDE-YOLO python=3.11 -y
-conda activate SPDE-YOLO
+conda create -n DPMA Net python=3.11 -y
+conda activate DPMA Net
 ```
 
 ### Step 2: Clone the repository
 
 ```bash
-git clone https://github.com/val-utehy/SPDE-YOLO.git
-cd SPDE-YOLO
+git clone https://github.com/val-utehy/DPMA Net.git
+cd DPMA Net
 ```
 
 > [!NOTE]
@@ -73,7 +73,7 @@ python3.11 --version
 ### Step 1: Create a virtual environment
 
 ```bash
-python3.11 -m venv SPDE-YOLO
+python3.11 -m venv DPMA Net
 ```
 
 ### Step 2: Activate the environment
@@ -81,19 +81,19 @@ python3.11 -m venv SPDE-YOLO
 Linux or macOS:
 
 ```bash
-source SPDE-YOLO/bin/activate
+source DPMA Net/bin/activate
 ```
 
 Windows Command Prompt:
 
 ```bash
-SPDE-YOLO\Scripts\activate
+DPMA Net\Scripts\activate
 ```
 
 Windows PowerShell:
 
 ```powershell
-SPDE-YOLO\Scripts\Activate.ps1
+DPMA Net\Scripts\Activate.ps1
 ```
 
 ### Step 3: Install Ultralytics
@@ -162,7 +162,7 @@ recall = float(metrics.box.mr)
 f1_score = 2 * precision * recall / (precision + recall + 1e-9)
 
 print("=" * 60)
-print("SPDE-YOLO Evaluation Results")
+print("DPMA Net Evaluation Results")
 print("=" * 60)
 print(f"mAP@0.50:      {metrics.box.map50:.4f}")
 print(f"mAP@0.50:0.95: {metrics.box.map:.4f}")
@@ -172,7 +172,7 @@ print(f"F1-score:      {f1_score:.4f}")
 print("=" * 60)
 ```
 
-The `modules` package must be imported before loading the checkpoint so that the custom SPDE-YOLO components are registered correctly.
+The `modules` package must be imported before loading the checkpoint so that the custom DPMA Net components are registered correctly.
 
 ---
 
@@ -222,7 +222,7 @@ python eval.py --imgsz 640 --no-tta
 
 # Inference
 
-SPDE-YOLO inference can also be executed through either the Python API or the provided command-line script.
+DPMA Net inference can also be executed through either the Python API or the provided command-line script.
 
 ---
 
@@ -318,9 +318,9 @@ python inference.py \
 
 # Model Export
 
-The SPDE-YOLO checkpoint can be exported to several deployment formats through the Ultralytics export interface.
+The DPMA Net checkpoint can be exported to several deployment formats through the Ultralytics export interface.
 
-Because SPDE-YOLO contains custom modules, the `modules` package must be imported before the checkpoint is loaded.
+Because DPMA Net contains custom modules, the `modules` package must be imported before the checkpoint is loaded.
 
 ---
 
@@ -344,7 +344,7 @@ model.export(
     simplify=True
 )
 
-print("SPDE-YOLO was exported to ONNX successfully.")
+print("DPMA Net was exported to ONNX successfully.")
 ```
 
 ---
