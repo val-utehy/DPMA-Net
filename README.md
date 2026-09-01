@@ -2,7 +2,7 @@
 
 # DPMA Net
 
-### DPMA Net: 
+### DPMA Net:  A Detail-Preserving Multi-Scale Attention Network for Human Detection in Flood Scenes Captured by Unmanned Aerial Vehicles
 
 <p align="center">
   <img src="fig/YOLOv26-Ours.drawio.png" width="85%"><br> 
